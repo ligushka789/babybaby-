@@ -64,10 +64,11 @@
     display: flex;
     flex-direction:row;
 }
-
 .yo {
     width: 30%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 /* Стили для изображений внутри контейнера */
 .container img {
@@ -319,6 +320,57 @@ footer a {
     width:80%;
 }
 
+.math {
+    display : flex;
+}
+
+.math form {
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    padding-top:20px;
+    width:100%;
+}
+
+.math form fieldset {
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    width:50%;
+    margin-bottom:30px;
+}
+
+.math form fieldset legend {
+    text-align: center;
+    font-size:1.2rem;
+}
+
+.math form fieldset .butcont {
+    display: flex;
+    flex:row;
+    width:100%;
+    margin-bottom:20px;
+}
+
+.math form fieldset .butcont button {
+    display:block;
+    width:20%;
+    box-sizing:border-box;
+    height:40px;
+    margin: auto;
+}
+
+.math form fieldset p {
+    display: flex;
+    margin:0;
+}
+
+.math form fieldset p span {
+    margin: auto;
+    font-size:1.2rem;
+}
+
+
 @media (max-width: 700px) {
     /* При ширине экрана до 700px */
     .burger {
@@ -353,14 +405,7 @@ footer a {
         flex-direction: column; /* Переключение на вертикальный макет */
     }
     
-    .yo {
-        display: flex;
-        flex-direction: column; /* Внутренние элементы располагаются вертикально */
-        flex-wrap: wrap; /* Перенос элементов на новую строку при необходимости */
-        width: 100%; /* Элемент занимает всю ширину контейнера */
-        margin: 0; /* Убираем отступы */
-    }
-
+  
     .yo p {
         margin-top: 5px; /* Отступ сверху для параграфов */
         margin-bottom: 10px; /* Отступ снизу для параграфов */
@@ -481,6 +526,9 @@ footer a {
     z-index: 20; /* Set a higher stacking order for the dropdown */
     background-color: pink;
     }
+    .math form fieldset {
+        width:70%;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
@@ -496,6 +544,44 @@ footer a {
         margin: auto; /* Центрирование изображения по горизонтали */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
