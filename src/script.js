@@ -55,23 +55,58 @@ div.addEventListener("click", (event) => {
     calculus("/");
 });
 
+
+const sin = document.getElementById("butsin");
+const cos = document.getElementById("butcos");
+const tg = document.getElementById("buttg");
+const ctg = document.getElementById("butctg");
+
+let number =  document.getElementById("number");
+
+const result1 = document.getElementById("result1");
+
+let res1 = 0
+
 function trigono(mark) {
 
-    const num = parseFloat(first.value) || 0;
+    let num = parseFloat(number.value) || 0;
+
+    num = num * (Math.PI/180);
 
     switch(mark) {
-case  "sin":
-    val = Math.sin(num);
+case "sin":
+    res1 = Math.sin(num);
     break;
-case  "cos":
-    val = Math.cos(num);
+case "cos":
+    res1 = Math.cos(num);
      break;
-case  "tg":
-    val = (num % Math.PI) === (Math.PI/2) ? "error" : Math.tan(num);
+case "tg":
+    res1 = (num % Math.PI) === (Math.PI/2) ? "error" : Math.tan(num);
     break;
-case  "ctg":
-    val = (num % Math.PI) === 0 ? "error" : 1/Math.tan(num);
+case "ctg":
+    res1 = (num % Math.PI) === 0 ? "error" : 1/Math.tan(num);
     break;
 
 }
+result1.textContent = res1;
 }
+
+sin.addEventListener("click", (event) => {
+    event.preventDefault()
+    trigono("sin");
+});
+
+cos.addEventListener("click", (event) => {
+    event.preventDefault()
+    trigono("cos");
+});
+
+tg.addEventListener("click", (event) => {
+    event.preventDefault()
+    trigono("tg");
+});
+
+ctg.addEventListener("click", (event) => {
+    event.preventDefault()
+    trigono("ctg");
+});
