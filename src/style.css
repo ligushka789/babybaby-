@@ -46,10 +46,22 @@
     border-radius: 20%; /* Скругляет углы div при наведении курсора */
 }
 
-/* Контейнер с элементами, использующий Flexbox для адаптивного размещения */
+.media-bomba {
+    display:flex;
+    margin-right:10px;
+    
+}
+img {
+    margin:0;
+}
+ iframe {
+    margin:0;
+    width:355px;
+    height: 75px;
+}
 
 
-/* Элементы с классами .person и .interests занимают 25% ширины контейнера и центрируются */
+
 .person{
     width:7%;
     margin:auto;
@@ -88,6 +100,25 @@
     transition: 0.5s ease; /* Плавный переход за 0.5 секунды */
     box-shadow: 10px 10px 5px #8e1027; /* Изменение цвета тени на синий */
 }
+
+.API .container .petrik img {
+    width: 55%;
+}
+
+.API .container .kyoto img {
+    width: 75%;
+    
+}
+
+.API .container .seattle img {
+    width: 55%;
+}
+
+
+
+
+
+
 
 /* Фон для всей страницы */
 body {
@@ -194,6 +225,7 @@ p:hover {
     background-color: #db1717; /* Изменение фона ссылки на синий при наведении */
     transition: 0.7s ease; /* Плавный переход фона за 0.7 секунды */
 }
+
 
 footer {
     display: flex;
@@ -356,12 +388,18 @@ footer a {
     margin-bottom:20px;
 }
 
+.math form fieldset input {
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom of each input element */
+    background: linear-gradient(90deg, rgb(135, 8, 35) 0%, rgba(173, 22, 30, 0.72) 37%, rgb(24, 18, 74) 100%);; 
+}
+
 .math form fieldset .butcont button {
     display:block;
     width:20%;
     box-sizing:border-box;
     height:40px;
     margin: auto;
+    background: linear-gradient(90deg, rgb(135, 8, 35) 0%, rgba(173, 22, 30, 0.72) 37%, rgb(24, 18, 74) 100%);
 }
 
 .math form fieldset p {
@@ -406,12 +444,18 @@ footer a {
     margin-bottom:20px;
 }
 
+.flex form fieldset input {
+    margin-bottom: 10px; /* Add a margin of 10px to the bottom of each input element */
+    background: linear-gradient(90deg, rgb(135, 8, 35) 0%, rgba(173, 22, 30, 0.72) 37%, rgb(24, 18, 74) 100%);; 
+}
+
 .flex form fieldset .buttan button {
     display:block;
     width:20%;
     box-sizing:border-box;
     height:40px;
     margin: auto;
+    background: linear-gradient(90deg, rgb(135, 8, 35) 0%, rgba(173, 22, 30, 0.72) 37%, rgb(24, 18, 74) 100%);
 }
 
 .flex form fieldset p {
@@ -423,6 +467,57 @@ footer a {
     margin: auto;
     font-size:1.2rem;
 }
+
+@media (max-width:1200px) {
+    .API {
+        display: flex;
+        flex-direction:column;
+    }
+    .API .petrik {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .API .petrik img, span{
+        width: 70%;
+        margin: auto;
+        height:auto;
+    }
+    .API .kyoto {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .API .seattle img {
+        border-radius:8px;
+    }
+    .API .kyoto img {
+        border-radius:8px;
+    }
+    .API .petrik span {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .API .seattle span {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .API .kyoto span {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+
+}
+
 
 
 
@@ -583,6 +678,24 @@ footer a {
     }
     .math form fieldset {
         width:70%;
+    }
+    .API .petrik {
+        width:100%;
+    }
+    .API .kyoto {
+        width:100%;
+    }
+    .API .seattle {
+        width:100%;
+    }
+    .API .petrik span {
+        font-size: 1.05rem;
+    }
+    .API .kyoto span {
+        font-size: 1.05rem;
+    }
+    .API .seattle span {
+        font-size: 1.05rem;
     }
 }
 
