@@ -11,7 +11,9 @@
     display: flex; /* Устанавливает контейнер ul как flex-контейнер для его дочерних элементов (li) */
     flex-direction: row; /* Располагает элементы списка (li) в строку (по горизонтали) */
     list-style: none; /* Убирает маркеры списка */
-    margin: 0; /* Убирает внешний отступ у списка */
+    margin-left:-165px; /* Убирает внешний отступ у списка */
+    padding: 0;
+    
 }
 
 .navbar ul li {
@@ -46,9 +48,10 @@
     border-radius: 20%; /* Скругляет углы div при наведении курсора */
 }
 
-.media-bomba {
+.navbar .media-bomba {
     display:flex;
-    margin-right:10px;
+    margin: 0;
+
     
 }
 img {
@@ -56,8 +59,9 @@ img {
 }
  iframe {
     margin:0;
-    width:355px;
+    width:235px;
     height: 75px;
+    border:none;
 }
 
 
@@ -243,17 +247,6 @@ footer a {
     z-index: 10; /* Set stacking order */
 }
 
-.navbar ul .work ul {
-    position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
-    flex-direction: column; /* Arrange children in a column */
-    left: 0; /* Align the left edge of the dropdown with the parent */
-    top: 100%; /* Position the top of the dropdown just below the parent */
-    width: 100px; /* Set a fixed width for the dropdown */
-    display: none; /* Initially hide the dropdown */
-    padding: 0; /* Remove default padding */
-    z-index: 20; /* Set a higher stacking order for the dropdown */
-}
-
 .navbar ul .work ul li {
     z-index: 20; /* Ensure list items have the same stacking order as the parent */
     background-color: #a81d1d; /* Set background color */
@@ -272,7 +265,7 @@ footer a {
 .navbar ul .work ul {
     position: absolute; /* Position the dropdown menu absolutely relative to its nearest positioned ancestor */
     flex-direction: column; /* Arrange children in a column */
-    left: 10px; /* Offset the dropdown 10px from the left of the parent */
+    left: 165px; /* Offset the dropdown 10px from the left of the parent */
     top: 100%; /* Align the top of the dropdown with the top of the parent */
     width: 100px; /* Set a fixed width for the dropdown */
     display: none; /* Initially hide the dropdown */
