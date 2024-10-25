@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 .navbar {
     display: flex; /* Устанавливает контейнер .navbar как flex-контейнер, 
     позволяя его дочерним элементам располагаться в одной линии */
@@ -151,28 +154,7 @@ p:hover {
     margin: auto; /* Центрирование секции */
 }
 
-.container-video {
-    display: flex;
-    flex-direction: column; /* Контейнер для видео, элементы располагаются вертикально */
-}
 
-.video1, .video2, .video3 {
-    margin-bottom: 20px; /* Отступ снизу для каждого видео-блока */
-    flex-direction: column; /* Внутренние элементы располагаются вертикально */
-    display: flex; /* Применение Flexbox для управления содержимым */
-}
-
-.video1 video {
-    margin: auto; /* Центрирование видео по горизонтали */
-}
-
-.video2 iframe {
-    margin: auto; /* Центрирование iframe по горизонтали */
-}
-
-.video3 iframe {
-    margin: auto; /* Центрирование iframe по горизонтали */
-}
 
 .container-audio {
     display: flex;
@@ -243,7 +225,7 @@ footer a {
 
 .navbar ul .work {
     position: relative; /* Set the position to relative to enable absolute positioning of its child elements */
-    display: flex; /* Use flexbox for layout */
+    display: flex; /* Use flexbox for laut */
     z-index: 10; /* Set stacking order */
 }
 
@@ -516,6 +498,10 @@ footer a {
 
 @media (max-width: 700px) {
     /* При ширине экрана до 700px */
+body {
+    width:100%;
+}
+
     .burger {
         display: block;
         position: relative;
@@ -560,7 +546,7 @@ footer a {
         box-shadow: 5px 5px 5px gray; /* Тень для изображений */
         width: 95%; /* Изображение занимает 95% ширины контейнера */
         height: auto; /* Высота автоматически подстраивается под ширину */
-        margin: auto; /* Центрирование изображения по горизонтали */
+        margin: 0; /* Центрирование изображения по горизонтали */
     }
     
     .container img:hover {
@@ -573,7 +559,7 @@ footer a {
         display: flex;
         flex-direction: column; /* Внутренние элементы располагаются вертикально */
          /* Перенос элементов на новую строку при необходимости */
-        width: 100%; /* Элемент занимает всю ширину контейнера */
+        width: 90%; /* Элемент занимает всю ширину контейнера */
         margin: 0; /* Убираем отступы */
     }
 
@@ -587,18 +573,12 @@ footer a {
         text-align: center; /* Выравнивание заголовка по центру */
     }
 
-    .video1 video {
-        margin-top: 20px; /* Отступ сверху для видео */
-        width: 95%; /* Видео занимает 95% ширины контейнера */
-        height: auto; /* Высота автоматически подстраивается под ширину */
-    }
-    
-    .video2 iframe {
+    .yo iframe {
         width: 95%; /* Iframe занимает 95% ширины контейнера */
         height: 320px; /* Высота Iframe фиксирована */
     }
     
-    .video3 iframe {
+    .yo iframe {
         width: 95%; /* Iframe занимает 95% ширины контейнера */
         height: 320px; /* Высота Iframe фиксирована */
     }
@@ -614,8 +594,9 @@ footer a {
         width:30%;
         height:auto;
         top: 60px;
-        right:-40%;
         z-index:2;
+        margin:0;
+        display:none;
     }
     
     .navbar ul li {
@@ -643,6 +624,7 @@ footer a {
     }
     
     .navbar.open ul {
+        display:block;
         transform:translateX(100%);
         transition:0.7s ease-in-out;
         right: 30%;
@@ -661,7 +643,7 @@ footer a {
     }   
 
     .navbar ul .work ul {
-    left: -100px; /* Offset the dropdown 10px from the left of the parent */
+    left: -200px; /* Offset the dropdown 10px from the left of the parent */
     top: 100%; /* Align the top of the dropdown with the top of the parent */
     width: 100px; /* Set a fixed width for the dropdown */
     display: none; /* Initially hide the dropdown */
@@ -704,6 +686,14 @@ footer a {
         height: 200px; /* Высота изображения фиксирована */
         margin: auto; /* Центрирование изображения по горизонтали */
     }
+
+    .yo video {
+        margin-top: 20px; /* Отступ сверху для изображений */
+        box-shadow: 5px 5px 5px 5px gray; /* Тень для изображений */
+        margin: auto; 
+        Width:30%;
+        height:25%;
+}
 }
 
 
