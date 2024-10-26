@@ -57,7 +57,7 @@ body {
 
     
 }
-img {
+.navbar .media-bomba img {
     margin:0;
 }
  iframe {
@@ -232,10 +232,6 @@ p:hover {
     padding:auto; 
     max-width: 550px;
 }
-
-.video2,.video3 {
-    
-   }
 
 .video1 video, .video2 iframe, .video3 iframe {
     width:100%;
