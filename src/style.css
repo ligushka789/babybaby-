@@ -1,20 +1,18 @@
 body {
     margin: 0;
+    background: linear-gradient(90deg, rgb(135, 8, 35) 0%, rgba(173, 22, 30, 0.72) 37%, rgb(24, 18, 74) 100%);; 
 }
 .navbar {
-    display: flex; /* Устанавливает контейнер .navbar как flex-контейнер, 
-    позволяя его дочерним элементам располагаться в одной линии */
-    flex-direction: row; /* Располагает дочерние элементы .navbar в строку (по горизонтали) */
-    justify-content: space-between; /* Распределяет дочерние элементы .navbar равномерно, 
-    с максимальным пространством между ними */
-     /* Устанавливает фоновый цвет для .navbar */
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
 }
 
 .navbar ul {
-    display: flex; /* Устанавливает контейнер ul как flex-контейнер для его дочерних элементов (li) */
-    flex-direction: row; /* Располагает элементы списка (li) в строку (по горизонтали) */
-    list-style: none; /* Убирает маркеры списка */
-    margin-left:-165px; /* Убирает внешний отступ у списка */
+    display: flex;
+    flex-direction: row; 
+    list-style: none; 
+    margin-left:-165px; 
     padding: 0;
     
 }
@@ -42,20 +40,18 @@ body {
 
 .navbar div a {
     text-decoration: none; /* Убирает подчеркивание у ссылок в div */
-    color: black; /* Устанавливает цвет текста ссылок черным */
-    margin: auto; /* Центрирует текст внутри div */
+    color: black; 
+    margin: auto;
 }
 
 .navbar div:hover {
-    background-color: #4796cf; /* Изменяет фоновый цвет div при наведении курсора */
-    border-radius: 20%; /* Скругляет углы div при наведении курсора */
+    background-color: #4796cf;
+    border-radius: 20%; 
 }
 
-.navbar .media-bomba {
+.media-bomba {
     display:flex;
     margin: 0;
-
-    
 }
 .navbar .media-bomba img {
     margin:0;
@@ -111,6 +107,14 @@ body {
     box-shadow: 10px 10px 5px #8e1027; /* Изменение цвета тени на синий */
 }
 
+.berger {
+    display:flex;
+    height:500px;
+}
+.berger iframe {
+    width:100%;
+    height:100%;
+}
 .API .container .petrik img {
     width: 55%;
 }
@@ -123,19 +127,6 @@ body {
 .API .container .seattle img {
     width: 55%;
 }
-
-
-
-
-
-
-
-/* Фон для всей страницы */
-body {
-    background: linear-gradient(90deg, rgb(135, 8, 35) 0%, rgba(173, 22, 30, 0.72) 37%, rgb(24, 18, 74) 100%);; /* Светло-серый фон */
-}
-
-
 
 /* Стили для текста в параграфах */
 p {
@@ -411,6 +402,16 @@ footer a {
 .math form fieldset p span {
     margin: auto;
     font-size:1.2rem;
+}
+
+
+.cipsi {
+    display:flex;
+    height:350px;
+}
+.cipsi iframe {
+    width:100%;
+    height:100%;
 }
 
 .flex {
