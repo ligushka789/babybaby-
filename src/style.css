@@ -67,6 +67,9 @@ img {
     border:none;
 }
 
+.pikmi {
+    text-align: center;
+}
 
 
 .person{
@@ -141,11 +144,12 @@ p {
     font-weight: normal; /* Обычный вес шрифта */
     margin-right: 20px;
     margin-left: 10px; /* Отступы по бокам */
+    transition: 1.5s ease; 
 }
 
 /* Эффект при наведении на параграф */
 p:hover {
-    background-color: #2d1463; /* Синий фон при наведении */
+    background-color: #a13333; 
 }
 
 /* Секции внутри контейнера */
@@ -168,11 +172,13 @@ p:hover {
 }
 
 .audio1 audio, .audio2 audio, .audio3 audio {
-    width: 60%; /* Аудиоплееры занимают 60% ширины контейнера */
+    width: 30%; /* Аудиоплееры занимают 60% ширины контейнера */
     margin: auto; /* Центрирование аудиоплееров по горизонтали */
 }
 
 .audio1 img, .audio2 img, .audio3 img {
+    width:35%;
+    height:35%;
     margin: auto; /* Центрирование изображений */
     border-radius: 10%; /* Скругление углов изображений */
     box-shadow: 5px 5px 5px #7cc6e5; /* Добавление синеватой тени к изображениям */
@@ -181,6 +187,7 @@ p:hover {
 .container-book {
     display: flex;
     flex-direction: column; /* Контейнер для книг, элементы располагаются вертикально */
+    
 }
 
 .book1, .book2, .book3 {
@@ -212,6 +219,29 @@ p:hover {
     transition: 0.7s ease; /* Плавный переход фона за 0.7 секунды */
 }
 
+.container-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video1, .video2, .video3 {
+    margin:auto;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 5px 5px #a13333;
+    padding:auto; 
+    max-width: 550px;
+}
+
+.video2,.video3 {
+    
+   }
+
+.video1 video, .video2 iframe, .video3 iframe {
+    width:100%;
+    height:100%;
+    margin:auto;
+}
 
 footer {
     display: flex;
