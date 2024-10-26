@@ -235,6 +235,11 @@ footer {
     justify-content: center; /* Центрирование содержимого футера */
 }
 
+footer img {
+    width:60px;
+    height:60px;
+}
+
 footer a {
     margin-right: 10px; /* Отступ справа у ссылок в футере */
 }
@@ -614,16 +619,23 @@ body {
         height: auto; /* Высота автоматически подстраивается под ширину */
     }
 
-    .navbar div{
-        margin:0%;
+    .media-bomba {
+        width:65%;
+        height:65%;
     }
+
+    .media-bomba iframe {
+        width:100%;
+        height:100%;
+    }
+
     .navbar ul {
         position:absolute;
         background-color:  linear-gradient(90deg, rgb(135, 8, 35) 0%, rgba(173, 22, 30, 0.72) 37%, rgb(24, 18, 74) 100%);;
         flex-direction:column;
         width:30%;
         height:auto;
-        top: 60px;
+        top: 85px;
         z-index:2;
         margin:0;
         display:none;
