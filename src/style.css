@@ -38,6 +38,12 @@ body {
     margin-right: 20px; /* Добавляет отступ справа у div */
 }
 
+.navbar .piska{
+    margin:0px;
+    width:25%;
+    
+}
+
 .navbar div a {
     text-decoration: none; /* Убирает подчеркивание у ссылок в div */
     color: black; 
