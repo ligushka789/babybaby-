@@ -38,11 +38,6 @@ body {
     margin-right: 20px; /* Добавляет отступ справа у div */
 }
 
-.navbar .piska{
-    margin:0px;
-    width:25%;
-    
-}
 
 .navbar div a {
     text-decoration: none; /* Убирает подчеркивание у ссылок в div */
@@ -154,8 +149,6 @@ p:hover {
     width: 100%; /* Секция занимает всю ширину контейнера */
     margin: auto; /* Центрирование секции */
 }
-
-
 
 .container-audio {
     display: flex;
@@ -619,6 +612,10 @@ body {
     .book1 img, .book2 img, .book3 img {
         width: 95%; /* Изображения книг занимают 95% ширины контейнера */
         height: auto; /* Высота автоматически подстраивается под ширину */
+    }
+
+    .navbar div{
+        margin:0%;
     }
     .navbar ul {
         position:absolute;
