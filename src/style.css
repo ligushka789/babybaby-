@@ -621,12 +621,10 @@ body {
 
     .media-bomba {
         width:65%;
-        height:65%;
-    }
+        }
 
     .media-bomba iframe {
-        width:100%;
-        height:100%;
+        width:80%;
     }
 
     .navbar ul {
@@ -685,7 +683,7 @@ body {
     }   
 
     .navbar ul .work ul {
-    left: -200px; /* Offset the dropdown 10px from the left of the parent */
+    left: -100px; /* Offset the dropdown 10px from the left of the parent */
     top: 100%; /* Align the top of the dropdown with the top of the parent */
     width: 100px; /* Set a fixed width for the dropdown */
     display: none; /* Initially hide the dropdown */
